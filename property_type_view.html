@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+
+    {% block container %}
+        <script type="text/javascript">
+            let propertyTypedata1 = {
+                typeid:1,
+                type:"Apartment",
+                desc:"apartment.desc"
+            };
+            let propertyTypedata2 = {
+                typeid:2,
+                type:"Villa",
+                desc:"Villa.desc"
+            };
+        </script>
+
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2>{{ headerTitle }}</h2>
+                <table class="table table-striped table-hover table--bordered">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>ID</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for propertyType in propertyTypes %}
+                            <tr>
+                                <td> {{ propertyType.id }} </td>
+                                <td> {{ propertyType.type }} </td>
+                                <td> {{ propertyType.desc }} </td>
+                                <td>
+                                    <i class="fa fa-edit" style="font-size: 20px; color: rgb(85, 188, 85);"></i>
+                                    <i class="fa fa-trash" style="font-size: 20px; color: rgb(234, 102, 102);"></i>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+ {%endblock%}
+
+
+

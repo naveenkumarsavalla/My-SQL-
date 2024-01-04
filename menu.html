@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{%static 'bootstrap.min.css'%}" rel="stylesheet">
+    <style>
+    .menu-item{
+        padding: 10px;
+    }
+    .menu-item:hover{
+        background-color:orange;
+    }
+    .menu-item-link{
+        color: aliceblue;
+        text-decoration: none;
+    }
+    </style>
+    <script>
+           function loadData()
+            {
+                name = "Add property type";
+                link = "/propertytypecreate";
+
+                name = "view property type";
+                link = "/PropertyTypes";
+
+                name = "Add property";
+                link = "/propertyview";
+
+                name = "view property";
+                link = "/propertytypeview";
+
+                document.getElementById(menuitem1).innerHTML = name;
+                document.getElementById(menuitem1).href = link;
+
+
+                document.getElementById(menuitem2).innerHTML = name;
+                document.getElementById(menuitem2).href = link;
+
+
+                document.getElementById(menuitem3).innerHTML = name;
+                document.getElementById(menuitem3).href = link;
+
+
+                document.getElementById(menuitem4).innerHTML = name;
+                document.getElementById(menuitem4).href = link;
+            }
+        </script>
+</head>
+<body onload="loadData()">
+<div class="bg-dark" style="height:100vh;">
+
+    <div class="menu-item">
+        <a id="menuitem1" href="/propertytypecreate" class="menu-item-link" target="_self">Add property type</a>
+    </div>
+    <div class="menu-item">
+        <a id="menuitem2" href="/PropertyTypes" class="menu-item-link" target="_self">View property type</a>
+    </div>
+    <div class="menu-item">
+        <a id="menuitem3" href="/propertyview" class="menu-item-link" target="_self">Add property</a>
+    </div>
+    <div class="menu-item">
+        <a id="menuitem4" href="/propertytypeview" class="menu-item-link" target="_self">View property</a>
+    </div>
+</div>
+</body>
+</html>

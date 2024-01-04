@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+
+        {% block container %}
+            <div>
+               <h2>Add Property Type</h2>
+            <form>
+                <!-- Type -->
+                    <div class="form-group row">
+                        <label class="col-1">Type</label>
+                        <div class="col-11">
+                            <input type="text" class="form-control col" id="propertytype">
+                        </div>
+                    </div>
+                    <!-- Descrition -->
+                        <div class="form-group row mt-2">
+                            <label class="col-1">Description</label>
+                            <div class="col-11">
+                                <textarea rows="10" class="form-control col-40" id="typeDescription"></textarea>
+                            </div>
+
+                        </div>
+                        <!-- Buttons -->
+
+                    <div class="row p-2">
+                        <label class="col-1"></label>
+                        <div class="col-6 d-grid gap-1 mx-auto">
+                            <input type="button" class="btn btn-outline-primary mt-2" value="Save" onclick="savePropertyTypeData ()">
+                            <input type="reset" class="btn btn-outline-danger mt-2" value="Cancel">
+                        </div>
+                    </div>
+            </form>
+        </div>
+        {% endblock %}
+
+
+
+
+
+
+

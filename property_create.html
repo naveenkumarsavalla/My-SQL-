@@ -1,0 +1,64 @@
+{% extends 'index.html' %}
+
+        {% block container %}
+            <div   >
+                <h1>create property</h1>
+
+                <form>
+                    <!-- Registration -->
+                        <div class="form-group row p-3">
+                            <label class="col-2">Registration Id : </label>
+                            <div class="col-10 ">
+                                <input type="text" class="form-control col-10" id="regid">
+                            </div>
+                        </div>
+
+                    <!-- Type -->
+
+                        <div class="form-group row p-3">
+                            <label class="col-2">Type : </label>
+                            <div class="col-10 ">
+                                <input type="text" class="form-control col-10 " id="type">
+                            </div>
+                        </div>
+
+                    <!-- Owner -->
+
+                        <div class="form-group row p-3">
+                            <label class="col-2">Owner : </label>
+                            <div class="col-10 ">
+                                <input type="text" class="form-control col-10" id="regowner">
+                            </div>
+                        </div>
+
+                    <!-- Orders -->
+
+                        <div class="form-group row p-3">
+                            <label class="col-2">Orders : </label>
+                            <div class="col-10 ">
+                                <input type="text" class="form-control col-10" id="address">
+                            </div>
+                        </div>
+
+                    <!-- Descrition -->
+
+                        <div class="form-group row mt-2 p-3">
+                            <label class="col-2"> <b>Description :- </b></label>
+                            <div class="col-10">
+                                <textarea rows="10" class="form-control col-40" id="desc"></textarea>
+                            </div>
+                        </div>
+
+                    <!-- Buttons -->
+
+                        <div class="row p-2">
+                            <label class="col-1"></label>
+                            <div class="col-6 d-grid gap-1 mx-auto">
+                                <input type="button" class="btn btn-outline-primary mt-2" value="Save" onclick="prepareObject ()">
+                                <input type="reset" class="btn btn-outline-danger mt-2" value="Cancel">
+                            </div>
+                        </div>
+                </form>
+            <div>
+        </div>
+        {% endblock %}

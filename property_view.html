@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+
+        {% block container %}
+        <div>
+            <h2>View Properties</h2>
+            <table class="tabl e table-striped table-hover table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Regid</th>
+                        <th>Type</th>
+                        <th>Regowner</th>
+                        <th>Address</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>{{ propertyview1.Regid }}</td>
+                        <td>{{ propertyview1.Type }}</td>
+                        <td>{{ propertyview1.Regowner }}</td>
+                        <td>{{ propertyview1.Address }}</td>
+                        <td>{{ propertyview1.Description }}</td>
+
+                    </tr>
+                    <tr>
+                        <td>{{ propertyview2.Regid }}</td>
+                        <td>{{ propertyview2.Type }}</td>
+                        <td>{{ propertyview2.Regowner }}</td>
+                        <td>{{ propertyview2.Address }}</td>
+                        <td>{{ propertyview2.Description }}</td>
+
+                    </tr>
+                    <tr>
+                        <td>{{ propertyview3.Regid }}</td>
+                        <td>{{ propertyview3.Type }}</td>
+                        <td>{{ propertyview3.Regowner }}</td>
+                        <td>{{ propertyview3.Address }}</td>
+                        <td>{{ propertyview3.Description }}</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        {% endblock %}
+
